@@ -11,7 +11,8 @@ namespace monitors {
         pcap_monitor(const std::string & device_name) {
 
         }
-        std::generator<std::string> getStringNameDevices();
+        std::generator<std::string> getStringNameDevicesGenerator();
+        std::vector<std::string> getStringNameDevicesVector();
         std::vector<pcpp::PcapLiveDevice*> getDevices();
         pcpp::PcapLiveDevice* selectedDevice();
         void selectDevice(pcpp::PcapLiveDevice* liveDevice);

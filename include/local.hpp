@@ -4,4 +4,5 @@
 
 #pragma once
 #include "pcap/monitor.hpp"
+#include "ftxui/ui.hpp"
 #include "cpp_include.hpp"

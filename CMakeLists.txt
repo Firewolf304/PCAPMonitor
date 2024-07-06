@@ -9,7 +9,9 @@ add_executable(PCAPMonitor src/main.cpp
         include/pcap/monitor.hpp
         src/pcap/monitor.cpp
         include/local.hpp
-        include/cpp_include.hpp)
+        include/cpp_include.hpp
+        include/ftxui/ui.hpp
+        src/ftxui/ui.cpp)
 
 target_link_libraries(PCAPMonitor PRIVATE PCAP::PCAP PcapPlusPlus::Pcap++ PcapPlusPlus::Common++ PcapPlusPlus::Packet++)
 target_link_libraries(PCAPMonitor PRIVATE ftxui::dom ftxui::screen ftxui::component)

@@ -2,8 +2,9 @@
 int main() {
     std::cout << "Hello, World!" << std::endl;
     monitors::pcap_monitor monitor;
-    for(auto res : monitor.getDevices()) {
-        std::print("{} {} {}\n", res->getName(), res->getIPv4Address().toString(), res->captureActive());
-    }
+    ui::ui window;
+    window.makeSelectionMenu(monitor.getStringNameDevicesVector(), [&]() {
+        monitor.selectDevice()
+    });
     return 0;
 }
