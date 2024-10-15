@@ -1,10 +1,8 @@
-#include "../include/local.hpp"
+#include "../include/working.hpp"
+#include "../include/cpp_include.hpp"
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    monitors::pcap_monitor monitor;
-    ui::ui window;
-    window.makeSelectionMenu(monitor.getStringNameDevicesVector(), [&]() {
-        monitor.selectDevice()
-    });
+    firewolf::wifi::GUI_pcap_parse parser;
+    parser.CreateSelectDeviceMenu();
     return 0;
 }

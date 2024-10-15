@@ -6,3 +6,4 @@
 #include "pcap/monitor.hpp"
 #include "ftxui/ui.hpp"
 #include "cpp_include.hpp"
+#include "networking/parsing_libnm.hpp"

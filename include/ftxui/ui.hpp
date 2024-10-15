@@ -9,7 +9,9 @@ namespace ui {
     class ui {
     public:
         ui() : screen(ftxui::ScreenInteractive::Fullscreen()) {}
-        void makeSelectionMenu(const std::vector<std::string> & elements, std::function<void()> todo = [](){});
+        void makeSelectionDeviceMenu(const std::vector<std::string> & elements);
+        std::string makeSelectionDeviceMenuWithComments(std::unordered_map<std::string, std::unordered_map<std::string, std::string>> & elements);
+        void showDevice(std::string & device);
     private:
         ftxui::ScreenInteractive screen;
     };

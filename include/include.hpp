@@ -33,6 +33,13 @@
 #include <ftxui/component/component.hpp>
 #include <ftxui/dom/elements.hpp>
 
+// NetworkManager
+#include <dbus/dbus.h>
+#include <libnm/NetworkManager.h>
+#include <libudev.h>
+
+// Boost
+#include <boost/log/core.hpp>
 
 
 
